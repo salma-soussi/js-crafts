@@ -5,9 +5,6 @@ const titles = document.querySelectorAll('.title');
 const profile_imgs = document.querySelectorAll('.profile-img');
 const nameAuthors = document.querySelectorAll('.name');
 const dates = document.querySelectorAll('.date');
-// Get all the elements with the class animated-bg or animated-bg-text
-const animated_bgs = document.querySelectorAll('.animated-bg');
-const animated_bg_texts = document.querySelectorAll('.animated-bg-text');
 
 
 const DATES = ['Dec 30, 2021','Oct 11, 2021','Oct 20, 2021','Dec 20, 2021','Oct 15, 2021','Oct 21, 2021','Nov 06, 2021','Dec 24, 2021','Nov 15, 2021','Nov 23, 2021','Nov 28, 2021','Dec 13, 2021','Dec 09, 2021','Oct 03, 2021','Nov 10, 2021']
@@ -28,10 +25,9 @@ function fixNav() {
 }
 
 
-setTimeout(getData, 2000);
+getData()
 
 function getData() {
-    // Insert all the information that you want to show
 
     headers.forEach((header,index) => {
         header.innerHTML = `<img src="${HEADERS[index]}"
@@ -50,9 +46,5 @@ function getData() {
     dates.forEach((date,index) => {
         date.innerHTML = DATES[index];
     });
-    
-    // Remouve the class animated-bg and animated-bg-text from all elements of the Objects
-    animated_bgs.forEach((bg) => bg.classList.remove('animated-bg'));
-    animated_bg_texts.forEach((bg) => bg.classList.remove('animated-bg-text'));
-   
+       
 }
