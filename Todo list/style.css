@@ -26,6 +26,7 @@ form {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   width: 400px;
+  margin-bottom: 10px;
 }
 
 .input {
