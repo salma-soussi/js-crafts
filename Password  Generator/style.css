@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fccfa2;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.container {
+  background-color: #e17701;
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(253, 253, 253, 0.4);
+}
+
+.result-container {
+  background-color: #c65102;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+
+.btn {
+  border: none;
+  background-color: #c65102;
+  color: #fff;
+  font-size: 17px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #e17701;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+#length {
+  width: 40px;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  width: 70px;
+  background-color: #c65102;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  right: -25%;
+  font-size: 15px;
+}
