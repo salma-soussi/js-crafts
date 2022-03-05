@@ -53,7 +53,7 @@ function getData() {
 
         const infoEl = document.createElement('div')
         infoEl.classList.add('author-info')
-        infoEl.innerHTML = `<strong>salma Soussi</strong> <small>DATES[index]</small>`
+        infoEl.innerHTML = `<strong>salma Soussi</strong> <small>${DATES[index]}</small>`
         authorEl.appendChild(infoEl)
 
         contentEL.appendChild(authorEl)
